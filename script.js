@@ -39,7 +39,7 @@ btn.addEventListener("click",function(){
 		return new Promise((resolve)=>{
 			let add=divide + 10;
 			setTimeout(()=>{
-				opDiv.textContent = `Result: ${add}`;
+				opDiv.textContent = `Final Result: ${add}`;
 				resolve(add);
 			},1000);
 		})

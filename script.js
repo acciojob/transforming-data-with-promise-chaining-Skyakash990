@@ -7,10 +7,10 @@ btn.addEventListener("click",function(){
 	new Promise((resolve,reject)=>{
 		let val=Number(input.value);
 		setTimeout(()=>{
+			opDiv.textContent = `Result: ${val}`;
 			resolve(val);
 		},2000)
 	}).then((val)=>{
-		opDiv.textContent = `Result: ${val}`;
 		return new Promise((resolve,reject)=>{
 			setTimeout(()=>{
 				let resMultiply=val*2;

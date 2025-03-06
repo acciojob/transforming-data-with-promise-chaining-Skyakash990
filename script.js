@@ -16,7 +16,7 @@ btn.addEventListener("click",function(){
 				let resMultiply=val*2;
 				opDiv.textContent = `Result: ${resMultiply}`;
 				resolve(resMultiply);
-			},2000)
+			},1000)
 		})
 	}).then((resMultiply)=>{
 		return new Promise((resolve)=>{
